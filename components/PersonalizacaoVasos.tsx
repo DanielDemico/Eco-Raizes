@@ -16,7 +16,7 @@ const PersonalizacaoVasos: React.FC = () => (
         </div>
         <span className="inline-block bg-yellow-200 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Em construção</span>
       </div>
-      <h2 className="text-2xl sm:text-3xl font-bold text-eco-green-dark mb-2">Personalização de Vasos</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold text-eco-green-dark mb-2">Vasos decorativos </h2>
       <p className="text-gray-700 text-base mb-2">Sessão em andamento</p>
     </div>
   </section>
