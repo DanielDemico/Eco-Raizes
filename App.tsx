@@ -5,6 +5,7 @@ import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import StoreCarousel from './components/StoreCarousel';
 import Footer from './components/Footer';
+import PersonalizacaoVasos from './components/PersonalizacaoVasos';
 import { WHATSAPP_NUMBER, WHATSAPP_GREETING_MESSAGE } from './constants';
 
 const App: React.FC = () => {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
             whatsappNumber={WHATSAPP_NUMBER} 
             whatsappMessage={WHATSAPP_GREETING_MESSAGE}
           />
+          <PersonalizacaoVasos />
           <StoreCarousel 
             whatsappNumber={WHATSAPP_NUMBER} 
             whatsappMessage={WHATSAPP_GREETING_MESSAGE}

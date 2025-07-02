@@ -8,7 +8,7 @@ const Footer: React.FC<FooterProps> = ({ whatsappNumber }) => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'Instagram', href: 'https://instagram.com/ecoraizes', icon: InstagramIcon },
+    { name: 'Instagram', href: 'https://www.instagram.com/eco_raizes_nacional?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', icon: InstagramIcon },
     { name: 'Facebook', href: 'https://facebook.com/ecoraizes', icon: FacebookIcon },
     // { name: 'LinkedIn', href: '#', icon: LinkedInIcon }, // Example
   ];
@@ -16,11 +16,11 @@ const Footer: React.FC<FooterProps> = ({ whatsappNumber }) => {
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent("Olá! Visitei o site da Eco Raízes e gostaria de mais informações.")}`;
 
   return (
-    <footer className="bg-eco-green-dark text-eco-light pt-12 pb-8">
+    <footer className="bg-[#102a13] text-eco-light pt-12 pb-8">
       <div className="container mx-auto px-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-white">Eco Raízes</h3>
+          <img src="/eco-raizes-sem-fundo.png" alt="Eco Raízes Logo" className="h-12 w-auto mb-3" />
             <p className="text-sm leading-relaxed">
               Sua parceira em jardinagem, paisagismo e manutenção de áreas verdes. Conectando você com a natureza.
             </p>
@@ -49,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({ whatsappNumber }) => {
               </li>
               <li className="flex items-start"> {/* items-start for better alignment with multi-line text */}
                 <LocationMarkerIcon className="w-5 h-5 mr-2 mt-1 flex-shrink-0" /> 
-                <span>São Paulo, SP <br/>(Atendemos toda a região)</span>
+                <span> R. Maestro Júlio de Castro - Vila Aviacao, Tupã - SP, 17601-300<br/>(Atendemos em MG, GO, SP e PR)</span>
               </li>
             </ul>
             <div className="mt-6 flex space-x-4">

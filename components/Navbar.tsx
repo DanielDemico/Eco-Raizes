@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import WhatsAppButton from './WhatsAppButton';
 import { NAV_LINKS } from '../constants';
@@ -7,27 +6,20 @@ interface NavbarProps {
   whatsappNumber: string;
 }
 
-const LeafIcon: React.FC = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-eco-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    {/* A more thematic leaf icon */}
-    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343m11.314 11.314a8 8 0 00-11.314-11.314m11.314 11.314L6.343 7.343" /> 
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-     {/* Simplified leaf representation inside circle */}
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 10a4 4 0 00-4 4h8a4 4 0 00-4-4zM12 10V4M8 14a4 4 0 004 4m0-4a4 4 0 014 4" />
-  </svg>
-);
-
-
 const Navbar: React.FC<NavbarProps> = ({ whatsappNumber }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md z-50">
       <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <a href="#hero" className="flex items-center space-x-2">
-            <LeafIcon />
-            <span className="text-2xl font-bold text-eco-green-dark">Eco Raízes</span>
+            <div className="h-24 w-24 overflow-hidden flex items-center justify-center rounded-full bg-white">
+              <img
+                src="/eco-raizes-sem-fundo.png"
+                alt="Eco Raízes Logo"
+              />
+            </div>
           </a>
           
           {/* Desktop Menu */}

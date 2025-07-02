@@ -21,7 +21,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="https://picsum.photos/600/450?random=2&nature" 
+              src="/eco-raizes-loja.webp" 
               alt="Jardim bem cuidado pela Eco Raízes" 
               className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500" 
             />
